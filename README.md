@@ -20,25 +20,24 @@ This project showcases a complete Azure-native data pipeline using the **Medalli
 ## 📁 Project Structure
 ```
 azure-data-pipeline-project/
-├── notebooks/ # Databricks Notebooks
-│ ├── bronze_ingestion.ipynb
-│ ├── silver_transformation.ipynb
-│ ├── gold_serving.ipynb
-│ └── parameters.ipynb
+├── notebooks/ 
+│ ├── silver_layer.ipynb
+│ └── git.json
 │
 ├── images/ # Architecture & Visuals
-│ ├── architecture.png
-│ ├── adf_pipeline_overview.png
+│ ├── project-architecture.png
+│ ├── Power_BI_image.png
 │ ├── adf_linked_services.png
-│ ├── adf_dataflows.png
-│ └── adf_triggers.png
+│ ├── dynamic_adf_pipeline.png
+│ └── resources.png
 │
 ├── dashboards/
 │ └── PowerBI_Report.pbix
 │
 ├── scripts/
-│ ├── synapse_table_creation.sql
-│ └── adf_pipeline_definition.json
+│ ├── dynamic_adf_pipeline.json
+│ ├── synapse_gold_views_creation.sql
+│ └── synapse_external_table_creation.sql
 │
 ├── requirements.txt
 └── README.md
