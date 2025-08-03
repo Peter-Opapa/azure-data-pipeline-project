@@ -44,3 +44,28 @@ azure-data-pipeline-project/
 └── README.md
 ```
 ---
+
+---
+
+## 🗺️ Project Architecture
+
+### 🔧 Overview
+The data pipeline follows a **Bronze → Silver → Gold** layered approach:
+
+- **Bronze Layer**: Raw data landing using ADF from HTTP API to Data Lake.
+- **Silver Layer**: Data cleansing and transformations in Databricks (PySpark).
+- **Gold Layer**: Business-level curated tables modeled in Star Schema and stored in Synapse.
+- **Dashboard**: Business reports and metrics built on Power BI.
+
+![Full Architecture](images/Project-Architecture.png)
+
+---
+
+## 🛠️ Azure Data Factory (ADF) Pipelines
+
+### 📂 Pipeline JSON Definition
+
+> You can explore the entire ADF pipeline definition by reviewing the [`adf_pipeline_definition.json`](scripts/dynamic_adf_pipeline.json) file located in the `/scripts` folder.
+![Full Pipeline](images/dynamic_adf_pipeline.png)
+
+
